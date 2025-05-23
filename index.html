@@ -1,23 +1,23 @@
 
-<html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>ARQUITECTURA DE COMPUTADORAS</title>
+  <meta charset="UTF-8">
+  <title>Arquitectura de Computadoras</title>
   <style>
     body {
-      font-family: 'Times New Roman', serif;
-      background-color: #f0f0f0; /* gris claro */
-      color: #000000;
       margin: 0;
+      background-color: #d3d3d3;
+      font-"Times New Roman", Times, serif;
+      color: #000;
+      text-align: center;
     }
 
     .titulo {
-      background-color: #800000; /* guindo */
+      background-color: #800000;
       color: white;
-      text-align: center;
       padding: 20px;
-      font-family: 'Times New Roman', serif;
+      font-size: 1.5em;
     }
 
     .titulo a {
@@ -27,24 +27,6 @@
 
     .titulo a:hover {
       text-decoration: underline;
-    }
-
-    td {
-      background-color: #800000;
-      text-align: center;
-    }
-
-    td a {
-      color: white;
-      text-decoration: none;
-    }
-
-    td a:hover {
-      color: #ffcccc;
-    }
-
-    body {
-      margin: 0;
     }
 
     .esquina-superior-izquierda {
@@ -60,114 +42,101 @@
       right: 20px;
       width: 100px;
     }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    td {
+      background-color: #800000;
+      padding: 10px 15px;
+    }
+
+    td a {
+      color: white;
+      text-decoration: none;
+    }
+
+    td a:hover {
+      color: #ffcccc;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    .unidad {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
   </style>
 </head>
+
 <body>
 
-  <center>
-    <h1 class="titulo">
-      Tecnológico Nacional de México<br />
-      Instituto Tecnológico de Saltillo<br />
-      Oscar Ivan Valerio Perez
-    </h1>
+  <!-- Logos -->
+  <img src="https://media.licdn.com/dms/image/v2/D561BAQGdOXh5y4e86w/company-background_10000/company-background_10000/0/1660231250743/tecnologico_nacional_de_mexico_campus_saltillo_cover?e=2147483647&v=beta&t=EiwCjFbdLvG7qEJbDPxtHffRlY2tf8hLZfyGBolXUw0" class="esquina-superior-izquierda" alt="Logo TecNM">
 
-    <!-- Imagen en esquina superior izquierda -->
-    <img src="https://media.licdn.com/dms/image/v2/D561BAQGdOXh5y4e86w/company-background_10000/company-background_10000/0/1660231250743/tecnologico_nacional_de_mexico_campus_saltillo_cover?e=2147483647&v=beta&t=EiwCjFbdLvG7qEJbDPxtHffRlY2tf8hLZfyGBolXUw0"
-         class="esquina-superior-izquierda" />
+  <img src="https://its-site-bucket.s3.us-west-2.amazonaws.com/escudo_2977c841a7.png" class="esquina-superior-derecha" alt="Escudo ITS">
 
-    <!-- Imagen en esquina superior derecha -->
-    <img src="https://its-site-bucket.s3.us-west-2.amazonaws.com/escudo_2977c841a7.png"
-         class="esquina-superior-derecha" />
+  <!-- Título -->
+  <div class="titulo">
+    Tecnológico Nacional de México<br>
+    Instituto Tecnológico de Saltillo
+  </div>
 
-    <h3><a href="jucj.html">ARQUITECTURA DE COMPUTADORAS</a></h3>
+  <!-- Asignatura -->
+  <h3><a href="jucj.html">ARQUITECTURA DE COMPUTADORAS</a></h3>
 
-    <h3>TEMARIO</h3>
+  <!-- Tabla de navegación -->
+  <table border="3">
+    <tr>
+      <td><a href="Unidad 1.html">Unidad 1</a></td>
+      <td><a href="Unidad 2.html">Unidad 2</a></td>
+      <td><a href="Unidad 3.html">Unidad 3</a></td>
+      <td><a href="Unidad 4.html">Unidad 4</a></td>
+      <td><a href="Practicas.html">Prácticas</a></td>
+      <td><a href="https://saltillo.tecnm.mx/">Página oficial</a></td>
+    </tr>
+  </table>
 
-    <table border="3">
-      <tr>
-        <td><h3><a href="Unidad 1.html">Unidad 1</a></h3></td>
-        <td><h3><a href="Unidad 2.html">Unidad 2</a></h3></td>
-        <td><h3><a href="Unidad 3.html">Unidad 3</a></h3></td>
-        <td><h3><a href="Unidad 4.html">Unidad 4</a></h3></td>
-        <td><h3><a href="Practicas.html">Practicas</a></h3></td>
-        <td><h3><a href="https://saltillo.tecnm.mx/">Pagina Oficial</a></h3></td>
-      </tr>
-    </table>
+  <!-- Contenido de unidades -->
+  <div class="unidad">
+    <h3>Unidad 1: Arquitectura de cómputo</h3>
+    <p><b>1.1</b> Módulos de arquitectura</p>
+    <p><b>1.1.1</b> Clásicas<br>
+       <b>1.1.2</b> Segmentadas<br>
+       <b>1.1.3</b> Multiprocesamiento</p>
 
-    <h3>Unidad 1 Arquitectura de computo</h3>
-    <br /><b>1.1</b> Modulos de Arquitectura
-    <br /><b>1.1.1</b> Clasicas
-    <br /><b>1.1.2</b> Segmentadas
-    <br /><b>1.1.3</b> Multiprocesamiento
-    <br /><b>1.2</b> Análisis de componentes
-    <br /><b>1.2.1</b> Arquitecturas
-    <br /><b>1.2.1.1</b> Unidad Central de Procesamiento
-    <br /><b>1.2.1.2</b> Unidad Aritmética Lógica
-    <br /><b>1.2.1.3</b> Registros
-    <br /><b>1.2.1.4</b> Buses
-    <br /><b>1.2.2</b> Memoria
-    <br /><b>1.2.2.1</b> Conceptos básicos del manejo de la memoria
-    <br /><b>1.2.2.2</b> Memoria principal
-    <br /><b>1.2.2.3</b> Memoria cache
-    <br /><b>1.2.3</b> Manejo de entrada/salida
-    <br /><b>1.2.3.1</b> Módulos de entrada/salida
-    <br /><b>1.2.3.2</b> Entrada/salida programada
-    <br /><b>1.2.3.3</b> Entrada/salida mediante interrupciones
-    <br /><b>1.2.3.4</b> Acceso directo a memoria
-    <br /><b>1.2.3.5</b> Canales y procesadores de entrada/salida
-    <br /><b>1.2.4</b> Buses
-    <br /><b>1.2.4.1</b> Tipos de buses
-    <br /><b>1.2.4.2</b> Estructura de buses
-    <br /><b>1.2.4.3</b> Jerarquía de buses
-    <br /><b>1.2.5</b> Interrupciones
+    <p><b>1.2</b> Análisis de componentes<br>
+       <b>1.2.1</b> Arquitecturas<br>
+       <b>1.2.1.1</b> Unidad Central de Procesamiento<br>
+       <b>1.2.1.2</b> Unidad Aritmética Lógica<br>
+       <b>1.2.1.3</b> Registros<br>
+       <b>1.2.1.4</b> Buses<br>
+       <b>1.2.2</b> Memoria...</p>
 
-    <h3>Unidad 2 Estructura y funcionamiento de la unidad central de procesamiento</h3>
-    <br /><b>2.1</b> Organización del procesador
-    <br /><b>2.2</b> Estructura de registros
-    <br /><b>2.2.1</b> Registros visibles para el usuario
-    <br /><b>2.2.2</b> Registros de control y estados
-    <br /><b>2.2.3</b> Ejemplos CPU
-    <br /><b>2.3</b> El ciclo de la instrucción
-    <br /><b>2.3.1</b> Ciclo Fetch-Decode-Execute(FDE)
-    <br /><b>2.3.2</b> Segmentación de instrucciones
-    <br /><b>2.3.3</b> Conjunto de instrucciones
-    <br /><b>2.3.4</b> Métodos de direccionamiento
+    <h3>Unidad 2: Estructura y funcionamiento del CPU</h3>
+    <p><b>2.1</b> Organización del procesador<br>
+       <b>2.2</b> Estructura de registros...</p>
 
-    <h3>Unidad 3 Selección de componentes para ensamble de equipo de computo</h3>
-    <br /><b>3.1</b> Chipset
-    <br /><b>3.1.1</b> Unidad central de procesamiento
-    <br /><b>3.1.2</b> Controlador del bus
-    <br /><b>3.1.3</b> Punteros de entrada E/S
-    <br /><b>3.1.4</b> Controlador de interrupciones
-    <br /><b>3.1.5</b> Controlador de acceso directo a memoria (DMA)
-    <br /><b>3.1.6</b> Circuitos de temporización
-    <br /><b>3.1.7</b> Circuitos de control
-    <br /><b>3.1.8</b> Controlador de video
-    <br /><b>3.2</b> Aplicaciones
-    <br /><b>3.2.1</b> Entrada salida
-    <br /><b>3.2.2</b> Almacenamiento
-    <br /><b>3.2.3</b> Fuentes de alimentación
-    <br /><b>3.3</b> Ambientes de servicio
-    <br /><b>3.3.1</b> Negocios
-    <br /><b>3.3.2</b> Industria
-    <br /><b>3.3.3</b> Comercio electrónico
+    <h3>Unidad 3: Selección de componentes</h3>
+    <p><b>3.1</b> Chipset<br>
+       <b>3.2</b> Aplicaciones<br>
+       <b>3.3</b> Ambientes de servicio</p>
 
-    <h3>Unidad 4 Procesamiento paralelo</h3>
-    <br /><b>4.1</b> Aspectos básicos de la computación paralela
-    <br /><b>4.2</b> Tipos de computación paralela
-    <br /><b>4.2.1</b> Clasificación
-    <br /><b>4.2.2</b> Arquitectura de computadoras secuenciales
-    <br /><b>4.2.3</b> Organización de direcciones de memoria
-    <br /><b>4.3</b> Sistemas de memoria (compartida). Multiprocesadores
-    <br /><b>4.3.1</b> Redes de interconexión dinámicas o indirectas
-    <br /><b>4.3.2</b> Redes conmutadas
-    <br /><b>4.4</b> Sistemas de memoria construida. Multicomputadores
-    <br /><b>4.4.1</b> Redes de interconexión estáticas
-    <br /><b>4.5</b> Casos de estudio
+    <h3>Unidad 4: Procesamiento paralelo</h3>
+    <p><b>4.1</b> Computación paralela<br>
+       <b>4.2</b> Tipos de computación<br>
+       <b>4.3</b> Memoria compartida<br>
+       <b>4.4</b> Multicomputadores</p>
+  </div>
 
-    <p><a href="informacion.html">informacion</a></p>
-
-  </center>
+  <!-- Información adicional -->
+  <p><a href="informacion.html">: INFORMACIÓN</a></p>
 
 </body>
 </html>
