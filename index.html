@@ -33,6 +33,19 @@
       color: #222;
     }
 
+    .concepto {
+      margin-top: 15px;
+      font-size: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f0f8ff;
+      border: 1px solid #0000ff;
+      padding: 15px;
+      border-radius: 6px;
+      display: none; /* oculto inicialmente */
+    }
+
     .esquina-superior-izquierda {
       position: absolute;
       top: 30px;
@@ -60,7 +73,27 @@
     td a:hover {
       color: #ffcccc;
     }
+
+    .link-concepto {
+      cursor: pointer;
+      color: #0000FF;
+      text-decoration: underline;
+    }
+
+    .link-concepto:hover {
+      color: #ff0000;
+    }
   </style>
+  <script>
+    function toggleConcepto() {
+      const concepto = document.getElementById('concepto');
+      if (concepto.style.display === 'none' || concepto.style.display === '') {
+        concepto.style.display = 'block';
+      } else {
+        concepto.style.display = 'none';
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -72,8 +105,15 @@
 
   <!-- Descripción breve del tema -->
   <p class="descripcion">
-    Esta página presenta contenidos relacionados con la <strong>Arquitectura de Computadoras</strong>, la disciplina que estudia la organización y diseño de los sistemas computacionales.
+    Esta página presenta contenidos relacionados con la 
+    <span class="link-concepto" onclick="toggleConcepto()">Arquitectura de Computadoras</span>,
+    la disciplina que estudia la organización y diseño de los sistemas computacionales.
   </p>
+
+  <!-- Concepto oculto -->
+  <div id="concepto" class="concepto">
+    <strong>Arquitectura de Computadoras:</strong> Es la ciencia que estudia la estructura, organización y diseño de los componentes internos de una computadora para optimizar su rendimiento y funcionalidad.
+  </div>
 
   <!-- Imágenes de esquina -->
   <img src="https://media.licdn.com/dms/image/v2/D561BAQGdOXh5y4e86w/company-background_10000/company-background_10000/0/1660231250743/tecnologico_nacional_de_mexico_campus_saltillo_cover?e=2147483647&amp;v=beta&amp;t=EiwCjFbdLvG7qEJbDPxtHffRlY2tf8hLZfyGBolXUw0" class="esquina-superior-izquierda" alt="Logo izquierda">
